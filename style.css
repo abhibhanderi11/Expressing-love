@@ -30,3 +30,10 @@ html,body {
   .center-block h1 { font-size:22px; }
   .center-block img { max-width:220px; width:80%; }
 }
+.love-img {
+  max-width: 280px;
+  width: 90%;
+  display: block;
+  margin: 15px auto;
+  border-radius: 14px;
+}
