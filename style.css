@@ -1,44 +1,46 @@
-/* author - deepak tiwari */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  
-  body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffe5e5;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 500px;
-    margin: 20px;
-  }
-  
-  .container .tenor-gif-embed {
-    max-width: 200px;
-  }
-  
-  .container .btn {
-    display: flex;
-    gap: 25px;
-  }
-  
-  .btn a {
-    text-decoration: none;
-    color: #111;
-    background: #fff;
-    padding: 10px 25px;
-    border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
-  }
+/* center whole page and make content responsive */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffeaf0; /* your pink bg */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  gap: 18px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* center the yes/no content block */
+.center-block {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* make images responsive */
+.center-block img {
+  max-width: 320px;
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+}
+
+/* headings and text sizing */
+.center-block h1 { font-size: 28px; margin: 8px 0; }
+.center-block p  { font-size: 16px; margin: 6px 0; color: #333; }
+
+/* keep things inside viewport on small screens */
+@media (max-width:480px){
+  .center-block h1 { font-size: 22px; }
+  .center-block img  { max-width: 220px; width: 70%; }
+}
